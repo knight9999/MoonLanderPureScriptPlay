@@ -9405,7 +9405,7 @@ var PS = {};
                   if (maybeImage instanceof Data_Maybe.Nothing) {
                       return done(new Data_Either.Left(Effect_Exception.error("Could not load " + path)));
                   };
-                  throw new Error("Failed pattern match at MoonLander (line 454, column 44 - line 456, column 67): " + [ maybeImage.constructor.name ]);
+                  throw new Error("Failed pattern match at MoonLander (line 455, column 44 - line 457, column 67): " + [ maybeImage.constructor.name ]);
               })();
               return Data_Monoid.mempty(Effect_Aff.monoidCanceler);
           };
@@ -9439,7 +9439,7 @@ var PS = {};
           game: initialGame
       };
   };
-  var explain = Halogen_HTML_Elements.div([ Halogen_HTML_Properties.attr("style")("display: inline-block; vertical-align: top; margin-left: 20px;") ])([ Halogen_HTML_Elements.h2([  ])([ Halogen_HTML_Core.text("\u904a\u3073\u65b9") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("\u30b9\u30da\u30fc\u30b9\u30ad\u30fc\u3092\u62bc\u3059\u3068\u3001\u30ed\u30b1\u30c3\u30c8\u304c\u4e0a\u65b9\u306b\u52a0\u901f\u3057\u307e\u3059\u3002") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("\u30b9\u30da\u30fc\u30b9\u30ad\u30fc\u3092\u96e2\u3059\u3068\u3068\u3001\u30ed\u30b1\u30c3\u30c8\u304c\u91cd\u529b\u306b\u5f15\u304b\u308c\u3066\u843d\u4e0b\u3057\u59cb\u3081\u307e\u3059\u3002") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("\u7de9\u3084\u304b\u306a\u901f\u5ea6(-2.0 km/h \u4ee5\u4e0a)\u3067\u7740\u9678\u3059\u308c\u3070\u6210\u529f\u3067\u3059\u3002") ]), Halogen_HTML_Elements.h3([  ])([ Halogen_HTML_Core.text("\u753b\u50cf\u30d5\u30a1\u30a4\u30eb") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("\u30ed\u30b1\u30c3\u30c8\u753b\u50cf(rocket.png)"), Halogen_HTML_Elements.br([  ]), Halogen_HTML_Elements.a([ Halogen_HTML_Properties.attr("href")("https://www.kenney.nl/assets"), Halogen_HTML_Properties.attr("target")("_blank") ])([ Halogen_HTML_Core.text("(C) KENNEY") ]) ]), Halogen_HTML_Elements.h3([  ])([ Halogen_HTML_Core.text("\u53c2\u8003\u30d7\u30ed\u30b0\u30e9\u30e0 (Python)") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("\u65e5\u7d4c\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2 2020\u5e745\u6708\u53f7\u3000\u7b2c\uff12\u4ed8\u9332"), Halogen_HTML_Elements.br([  ]), Halogen_HTML_Elements.a([ Halogen_HTML_Properties.attr("href")("http://bizboard.nikkeibp.co.jp/kijiken/summary/20200324/NSW0269F_4688963a.html"), Halogen_HTML_Properties.attr("target")("_blank") ])([ Halogen_HTML_Core.text("5\u65e5\u3067\u3067\u304d\u308b\uff01 Python\u3067\u30b2\u30fc\u30e0\u4f5c\u6210\u5165\u9580\uff0f\u7b2c\u56db\u65e5\u76ee") ]) ]), Halogen_HTML_Elements.h3([  ])([ Halogen_HTML_Core.text("Github") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Elements.a([ Halogen_HTML_Properties.attr("href")("https://github.com/knight9999/MoonLanderPureScript"), Halogen_HTML_Properties.attr("target")("_blank") ])([ Halogen_HTML_Core.text("https://github.com/knight9999/MoonLanderPureScript") ]) ]) ]);
+  var explain = Halogen_HTML_Elements.div([ Halogen_HTML_Properties.attr("style")("display: inline-block; vertical-align: top; margin-left: 20px;") ])([ Halogen_HTML_Elements.h2([  ])([ Halogen_HTML_Core.text("\u904a\u3073\u65b9") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("\u30b9\u30da\u30fc\u30b9\u30ad\u30fc\u3092\u62bc\u3059\u3068\u3001\u30ed\u30b1\u30c3\u30c8\u304c\u4e0a\u65b9\u306b\u52a0\u901f\u3057\u307e\u3059\u3002") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("\u30b9\u30da\u30fc\u30b9\u30ad\u30fc\u3092\u96e2\u3059\u3068\u3068\u3001\u30ed\u30b1\u30c3\u30c8\u304c\u91cd\u529b\u306b\u5f15\u304b\u308c\u3066\u843d\u4e0b\u3057\u59cb\u3081\u307e\u3059\u3002") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("\u7de9\u3084\u304b\u306a\u901f\u5ea6(-2.0 km/h \u4ee5\u4e0a)\u3067\u7740\u9678\u3059\u308c\u3070\u6210\u529f\u3067\u3059\u3002") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("\u6ce8\u610f\uff1aPC\u5c02\u7528\u3067\u3059\u3002\u73fe\u5728\u3001\u30b9\u30de\u30db\u306b\u306f\u5bfe\u5fdc\u3057\u3066\u3044\u307e\u305b\u3093\u3002") ]), Halogen_HTML_Elements.h3([  ])([ Halogen_HTML_Core.text("\u753b\u50cf\u30d5\u30a1\u30a4\u30eb") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("\u30ed\u30b1\u30c3\u30c8\u753b\u50cf(rocket.png)"), Halogen_HTML_Elements.br([  ]), Halogen_HTML_Elements.a([ Halogen_HTML_Properties.attr("href")("https://www.kenney.nl/assets"), Halogen_HTML_Properties.attr("target")("_blank") ])([ Halogen_HTML_Core.text("(C) KENNEY") ]) ]), Halogen_HTML_Elements.h3([  ])([ Halogen_HTML_Core.text("\u53c2\u8003\u30d7\u30ed\u30b0\u30e9\u30e0 (Python)") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("\u65e5\u7d4c\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2 2020\u5e745\u6708\u53f7\u3000\u7b2c\uff12\u4ed8\u9332"), Halogen_HTML_Elements.br([  ]), Halogen_HTML_Elements.a([ Halogen_HTML_Properties.attr("href")("http://bizboard.nikkeibp.co.jp/kijiken/summary/20200324/NSW0269F_4688963a.html"), Halogen_HTML_Properties.attr("target")("_blank") ])([ Halogen_HTML_Core.text("5\u65e5\u3067\u3067\u304d\u308b\uff01 Python\u3067\u30b2\u30fc\u30e0\u4f5c\u6210\u5165\u9580\uff0f\u7b2c\u56db\u65e5\u76ee") ]) ]), Halogen_HTML_Elements.h3([  ])([ Halogen_HTML_Core.text("Github") ]), Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Elements.a([ Halogen_HTML_Properties.attr("href")("https://github.com/knight9999/MoonLanderPureScript"), Halogen_HTML_Properties.attr("target")("_blank") ])([ Halogen_HTML_Core.text("https://github.com/knight9999/MoonLanderPureScript") ]) ]) ]);
   var render = function (dictMonadEffect) {
       return function (state) {
           return Halogen_HTML_Elements.div_([ Halogen_HTML_Elements.div([  ])([ Halogen_HTML_Core.text("Moon Lander") ]), Halogen_HTML_Elements.div([ Halogen_HTML_Properties.attr("style")("display: inline-block") ])([ Halogen_HTML_Elements.canvas([ Halogen_HTML_Properties.id_("canvas"), Halogen_HTML_Properties.width(state.canvas.width), Halogen_HTML_Properties.height(state.canvas.height) ]), Halogen_HTML_Elements.canvas([ Halogen_HTML_Properties.id_("hidden_canvas"), Halogen_HTML_Properties.width(state.canvas.width), Halogen_HTML_Properties.height(state.canvas.height), Halogen_HTML_Properties.attr("style")("display: none") ]) ]), explain ]);
@@ -9656,7 +9656,7 @@ var PS = {};
                                           return handleAction(dictMonadAff)(dictMonadAff.MonadEffect0())(Draw.value);
                                       });
                                   };
-                                  throw new Error("Failed pattern match at MoonLander (line 261, column 11 - line 265, column 32): " + [ s.game.gameStatus.value1.constructor.name ]);
+                                  throw new Error("Failed pattern match at MoonLander (line 262, column 11 - line 266, column 32): " + [ s.game.gameStatus.value1.constructor.name ]);
                               };
                               return Control_Applicative.pure(Halogen_Query_HalogenM.applicativeHalogenM)(Data_Unit.unit);
                           };
@@ -9757,7 +9757,7 @@ var PS = {};
                                           if (s.images.rocket instanceof Data_Maybe.Nothing) {
                                               return Data_Unit.unit;
                                           };
-                                          throw new Error("Failed pattern match at MoonLander (line 325, column 13 - line 345, column 26): " + [ s.images.rocket.constructor.name ]);
+                                          throw new Error("Failed pattern match at MoonLander (line 326, column 13 - line 346, column 26): " + [ s.images.rocket.constructor.name ]);
                                       };
                                       return Data_Unit.unit;
                                   };
@@ -9777,7 +9777,7 @@ var PS = {};
                                               if (s.game.gameStatus.value0 instanceof Failure) {
                                                   return 50.0;
                                               };
-                                              throw new Error("Failed pattern match at MoonLander (line 361, column 44 - line 363, column 40): " + [ s.game.gameStatus.value0.constructor.name ]);
+                                              throw new Error("Failed pattern match at MoonLander (line 362, column 44 - line 364, column 40): " + [ s.game.gameStatus.value0.constructor.name ]);
                                           };
                                           return 0.0;
                                       })();
@@ -9787,7 +9787,7 @@ var PS = {};
                                   if (s.images.rocket instanceof Data_Maybe.Nothing) {
                                       return Data_Unit.unit;
                                   };
-                                  throw new Error("Failed pattern match at MoonLander (line 352, column 7 - line 368, column 20): " + [ s.images.rocket.constructor.name ]);
+                                  throw new Error("Failed pattern match at MoonLander (line 353, column 7 - line 369, column 20): " + [ s.images.rocket.constructor.name ]);
                               })();
                               Graphics_Canvas.setTextAlign(ctx)(Graphics_Canvas.AlignLeft.value)();
                               Graphics_Canvas.setFont(ctx)("bold 18px \"\u30d2\u30e9\u30ae\u30ce\u4e38\u30b4 ProN W4\", \"Hiragino Maru Gothic ProN\", Meiryo, Arial, sans-serif")();
@@ -9833,13 +9833,13 @@ var PS = {};
                                   Graphics_Canvas.drawImage(ctx2)(Graphics_Canvas.canvasElementToImageSource(v1.value0))(0.0)(0.0)();
                                   return Data_Unit.unit;
                               };
-                              throw new Error("Failed pattern match at MoonLander (line 406, column 7 - line 406, column 55): " + [ v2.constructor.name ]);
+                              throw new Error("Failed pattern match at MoonLander (line 407, column 7 - line 407, column 55): " + [ v2.constructor.name ]);
                           };
-                          throw new Error("Failed pattern match at MoonLander (line 292, column 7 - line 292, column 61): " + [ v1.constructor.name ]);
+                          throw new Error("Failed pattern match at MoonLander (line 293, column 7 - line 293, column 61): " + [ v1.constructor.name ]);
                       }));
                   });
               };
-              throw new Error("Failed pattern match at MoonLander (line 213, column 16 - line 410, column 16): " + [ v.constructor.name ]);
+              throw new Error("Failed pattern match at MoonLander (line 214, column 16 - line 411, column 16): " + [ v.constructor.name ]);
           };
       };
   };
